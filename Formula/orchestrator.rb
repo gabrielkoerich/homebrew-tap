@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.3.6.tar.gz"
-  sha256 "a12fce035fc2f1d81521a7e332d615fde03cfae830d49503a4e248bae90b5773"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "7d2e1063a98db94ce4b0bc75cfcfd1139fa8724a83273f1f6c3e5cdbcbd4c390"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -20,8 +20,15 @@ class Orchestrator < Formula
       #!/usr/bin/env bash
       set -euo pipefail
 
+      export ORCH_VERSION="#{version}"
       export PROJECT_DIR="${PROJECT_DIR:-$(pwd)}"
       export ORCH_HOME="${ORCH_HOME:-$HOME/.orchestrator}"
+
+      # Handle --version before anything else
+      if [ "${1:-}" = "--version" ] || [ "${1:-}" = "-V" ]; then
+        echo "orchestrator $ORCH_VERSION"
+        exit 0
+      fi
 
       mkdir -p "$ORCH_HOME"
 
