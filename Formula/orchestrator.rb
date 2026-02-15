@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "bc20cd40e2568737a238a6b4e136dceee8c85245ccb955b4b2ccf16d85459b78"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "652ed3f88ec1c88076882aabab6d706016b3708e41ab056f135bd4f1f2505fe9"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -32,6 +32,9 @@ class Orchestrator < Formula
       export STATE_DIR="${STATE_DIR:-$ORCH_HOME/.orchestrator}"
       export CONTEXTS_DIR="${CONTEXTS_DIR:-$ORCH_HOME/contexts}"
       export LOCK_PATH="${LOCK_PATH:-$TASKS_PATH.lock}"
+
+      # Ensure Homebrew binaries are in PATH (LaunchAgents use minimal PATH)
+      export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
 
       # Code lives in Homebrew libexec
       cd "#{libexec}"
