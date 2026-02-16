@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.7.3.tar.gz"
-  sha256 "0a1b5d289bcbcea4e3f699385db87505811af9b2167df360f8213d97bb9d9f08"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.7.4.tar.gz"
+  sha256 "26cca594b47be219dc903f3d8a4df37729ff0c9a4dadc1ac9d6d426dbd26ce5e"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -14,6 +14,7 @@ class Orchestrator < Formula
   def install
     libexec.install "scripts", "prompts", "justfile"
     libexec.install Dir["*.example.yml"]
+    libexec.install "skills.yml" if (buildpath/"skills.yml").exist?
     libexec.install "tests" if (buildpath/"tests").exist?
 
     (bin/"orchestrator").write <<~EOS
@@ -23,14 +24,19 @@ class Orchestrator < Formula
       export ORCH_VERSION="#{version}"
       export PROJECT_DIR="${PROJECT_DIR:-$(pwd)}"
       export ORCH_HOME="${ORCH_HOME:-$HOME/.orchestrator}"
+      export ORCH_BREW=1
 
       # Handle --version before anything else
-      if [ "${1:-}" = "--version" ] || [ "${1:-}" = "-V" ]; then
-        echo "orchestrator $ORCH_VERSION"
-        exit 0
-      fi
+      case "${1:-}" in
+        --version|-V) echo "orchestrator $ORCH_VERSION"; exit 0 ;;
+      esac
 
       mkdir -p "$ORCH_HOME"
+
+      # Copy default skills.yml to ORCH_HOME if not present
+      if [ ! -f "$ORCH_HOME/skills.yml" ] && [ -f "#{libexec}/skills.yml" ]; then
+        cp "#{libexec}/skills.yml" "$ORCH_HOME/skills.yml"
+      fi
 
       # State paths (persistent in user home)
       export TASKS_PATH="${TASKS_PATH:-$ORCH_HOME/tasks.yml}"
