@@ -22,7 +22,7 @@ jobs:
 
       - name: Commit README changes
         run: |
-          if git diff --quiet README.md; then
+          if [ -z "$(git status --porcelain -- README.md)" ]; then
             echo "No README changes"
             exit 0
           fi
