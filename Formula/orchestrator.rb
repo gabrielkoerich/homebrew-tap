@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.22.3.tar.gz"
-  sha256 "38feba3e71d72bb75ef97a701c45906381c3c7d3c7658850acfcdc6195d8eb08"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.23.0.tar.gz"
+  sha256 "05d0c40ce0c44fa39714a270c006a7e526fe838e776f46c8665b08cc028dbe54"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -55,6 +55,9 @@ class Orchestrator < Formula
       cd "#{libexec}"
       exec just "$@"
     EOS
+
+    # Short alias
+    bin.install_symlink "orchestrator" => "orch"
   end
 
   service do
