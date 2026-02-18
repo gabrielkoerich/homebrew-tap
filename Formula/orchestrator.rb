@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.20.2.tar.gz"
-  sha256 "4337d10114958bb900c336b32dee408f25d59e44afe9e1ded885572c6ff9a9e5"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.21.0.tar.gz"
+  sha256 "bbe725af646705c0dbabaa75815de832ef2793867b1ef1ceea98abeb707e1779"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -10,6 +10,8 @@ class Orchestrator < Formula
   depends_on "jq"
   depends_on "just"
   depends_on "python@3"
+  depends_on "ripgrep"
+  depends_on "fd"
 
   def install
     libexec.install "scripts", "prompts", "justfile"
