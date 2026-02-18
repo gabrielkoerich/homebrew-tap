@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.23.0.tar.gz"
-  sha256 "05d0c40ce0c44fa39714a270c006a7e526fe838e776f46c8665b08cc028dbe54"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.24.0.tar.gz"
+  sha256 "ab3a2635fcf5a424d1470800213cac752c427e6d0137aa096ff72aabdf7c6067"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -71,12 +71,11 @@ class Orchestrator < Formula
     <<~EOS
       To get started:
         cd ~/your-project
-        orchestrator init         # configure project
-        orchestrator add "title"  # add a task
-        orchestrator serve        # start the server
+        orch init             # configure project
+        orch task add "title" # add a task
+        orch start            # start background server
 
-      Background service (auto-start on login):
-        brew services start orchestrator
+      `orch` is a short alias for `orchestrator`.
 
       Required agent CLIs (install at least one):
         brew install --cask claude-code   # Claude
