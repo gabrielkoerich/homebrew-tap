@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "d22b21ea86e7860b59c0368249585987ca40d4b8a5c38d02904c469dbe29cbb4"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.32.0.tar.gz"
+  sha256 "7f5837e982bcc9072f8515706c49f537a0f915aba537c54174c6432534a408a6"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
