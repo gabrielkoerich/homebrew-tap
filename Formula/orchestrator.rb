@@ -1,8 +1,8 @@
 class Orchestrator < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orchestrator"
-  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.35.0.tar.gz"
-  sha256 "18c29577d5af6f44001258eb30b63b725b305b3c89b4dd26151309fdba338c84"
+  url "https://github.com/gabrielkoerich/orchestrator/archive/refs/tags/v0.36.0.tar.gz"
+  sha256 "f3956b4be3ee16d5bc4da630aaa891bf108b0ea94c514d30a66b306bc2461e24"
   head "https://github.com/gabrielkoerich/orchestrator.git", branch: "main"
   license "MIT"
 
@@ -12,6 +12,7 @@ class Orchestrator < Formula
   depends_on "python@3"
   depends_on "ripgrep"
   depends_on "fd"
+  depends_on "sqlite"
 
   def install
     libexec.install "scripts", "prompts", "justfile"
@@ -47,6 +48,7 @@ class Orchestrator < Formula
       export STATE_DIR="${STATE_DIR:-$ORCH_HOME/.orchestrator}"
       export CONTEXTS_DIR="${CONTEXTS_DIR:-$ORCH_HOME/contexts}"
       export LOCK_PATH="${LOCK_PATH:-$TASKS_PATH.lock}"
+      export DB_PATH="${DB_PATH:-$ORCH_HOME/orchestrator.db}"
 
       # Ensure Homebrew binaries are in PATH (LaunchAgents use minimal PATH)
       export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
