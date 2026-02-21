@@ -1,8 +1,8 @@
 class Vault < Formula
   desc "Lock down sensitive files with age encryption"
   homepage "https://github.com/gabrielkoerich/vault"
-  url "https://github.com/gabrielkoerich/vault/archive/refs/tags/v0.1.8.tar.gz"
-  sha256 "3438e8c147578a3f52a6ab8d2d6faf73f37be1ce69c39950548875ee471b30e8"
+  url "https://github.com/gabrielkoerich/vault/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "1cc20466d00ad09362bb967936e79a49760bb5623a874ef9cd7b64ca8b14e6e0"
   head "https://github.com/gabrielkoerich/vault.git", branch: "main"
   license "MIT"
 
