@@ -12,7 +12,7 @@ brew tap gabrielkoerich/tap
 
 ### Formulae
 
-- [`orchestrator`](https://github.com/gabrielkoerich/orchestrator) (`0.54.4`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
+- [`orchestrator`](https://github.com/gabrielkoerich/orchestrator) (`0.54.5`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
   - Install: `brew install orchestrator`
   - Start service: `brew services start orchestrator`
   - Stop service: `brew services stop orchestrator`
