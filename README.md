@@ -12,6 +12,10 @@ brew tap gabrielkoerich/tap
 
 ### Formulae
 
+- [`orch`](https://github.com/gabrielkoerich/orch) (`orch-macos-universal`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
+  - Install: `brew install orch`
+  - Start service: `brew services start orch`
+  - Stop service: `brew services stop orch`
 - [`orchestrator`](https://github.com/gabrielkoerich/orchestrator) (`0.56.35`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
   - Install: `brew install orchestrator`
   - Start service: `brew services start orchestrator`
