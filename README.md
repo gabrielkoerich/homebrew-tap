@@ -16,7 +16,7 @@ brew tap gabrielkoerich/tap
   - Install: `brew install orch`
   - Start service: `brew services start orch`
   - Stop service: `brew services stop orch`
-- [`orchestrator`](https://github.com/gabrielkoerich/orchestrator) (`0.56.36`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
+- [`orchestrator`](https://github.com/gabrielkoerich/orchestrator) (`0.56.37`): Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)
   - Install: `brew install orchestrator`
   - Start service: `brew services start orchestrator`
   - Stop service: `brew services stop orchestrator`
