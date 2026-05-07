@@ -1,16 +1,16 @@
 class Orch < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orch"
-  version "0.70.32"
+  version "0.70.33"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gabrielkoerich/orch/releases/download/v0.70.32/orch-arm64"
-      sha256 "4d8e8512ee9e43985f30d7526a94ac4ce09690ddbda23a1623afdf347c39cf3f"
+      url "https://github.com/gabrielkoerich/orch/releases/download/v0.70.33/orch-arm64"
+      sha256 "264028c407c1c1a6d8ddaabdd398905943617f6f93f417b06f41dde3d06228a6"
     else
-      url "https://github.com/gabrielkoerich/orch/releases/download/v0.70.32/orch-x86_64"
-      sha256 "fe2b7fa15586c12377d9c4aff32cf776146d27e8f6cec4d750bbd56aa9af127d"
+      url "https://github.com/gabrielkoerich/orch/releases/download/v0.70.33/orch-x86_64"
+      sha256 "f16953f5ef480a9e0cbd434b115a32a32d52e1bd8486c977e62788dd25e61173"
     end
   end
 
