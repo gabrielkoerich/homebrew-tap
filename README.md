@@ -20,7 +20,7 @@ brew tap gabrielkoerich/tap
   - Install: `brew install orchestrator`
   - Start service: `brew services start orchestrator`
   - Stop service: `brew services stop orchestrator`
-- [`vault`](https://github.com/gabrielkoerich/vault) (`0.2.0`): Lock down sensitive files with age encryption
+- [`vault`](https://github.com/gabrielkoerich/vault) (`0.2.1`): Lock down sensitive files with age encryption
   - Install: `brew install vault`
 
 ## Update
