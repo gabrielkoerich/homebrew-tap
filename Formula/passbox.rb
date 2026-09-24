@@ -1,8 +1,8 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.6.5.tar.gz"
-  sha256 "8f7b0612060b2a2defb35a237f4e5f995ec41b92d0ba98d73b65b3310e7df0f9"
+  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "94e677ba6cb34c145f1cfc0d9357a8eebc0fcf7070833ff3d84f3082edbb0e86"
   head "https://github.com/gabrielkoerich/passbox.git", branch: "main"
   license "MIT"
 
