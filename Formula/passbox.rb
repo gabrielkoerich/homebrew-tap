@@ -1,8 +1,8 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.3.3.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.6.3.tar.gz"
+  sha256 "e074aec98f15530acff3dfe3a81dd823fc58d17753ae43c40710386f09c0ee96"
   head "https://github.com/gabrielkoerich/passbox.git", branch: "main"
   license "MIT"
 
@@ -15,12 +15,18 @@ class Passbox < Formula
     system "cargo", "install", *std_cargo_args
   end
 
+  # rclone is deliberately not a dependency. Syncing to a directory, which includes the
+  # iCloud Drive folder used by default, is a plain file copy and needs nothing installed.
   def caveats
     <<~EOS
-      Run `passbox init` to create the store at ~/.passbox.
+      Run `passbox init` to create the store at ~/.passbox. It binds to this Mac's
+      Secure Enclave and asks for nothing else.
 
-      Keep the recovery passphrase somewhere safe. It is the only way back if you
-      lose this Mac, because the Secure Enclave key cannot leave it.
+      The store opens on this Mac only. Lose the Mac and the secrets are gone.
+      `passbox sync --enable` adds a recovery passphrase and a copy elsewhere.
+
+      Install rclone only if you point PASSBOX_REMOTE at a cloud remote such as
+      b2:passbox. A directory target needs no extra tools.
     EOS
   end
 
