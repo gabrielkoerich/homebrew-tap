@@ -1,15 +1,16 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.6.4.tar.gz"
-  sha256 "df1cfc72bec8d36f036772b5382f7a3a62a550aef7a78a501e44f63b44455ab4"
+  url "https://github.com/gabrielkoerich/passbox/archive/refs/tags/v0.6.5.tar.gz"
+  sha256 "8f7b0612060b2a2defb35a237f4e5f995ec41b92d0ba98d73b65b3310e7df0f9"
   head "https://github.com/gabrielkoerich/passbox.git", branch: "main"
   license "MIT"
 
   depends_on "rust" => :build
-  # build.rs compiles the Secure Enclave helper with swiftc
-  depends_on xcode: :build
   depends_on :macos
+
+  # build.rs needs swiftc, which ships with the Command Line Tools that Homebrew already
+  # requires. `depends_on xcode: :build` would demand a full Xcode.app install instead.
 
   def install
     system "cargo", "install", *std_cargo_args
