@@ -20,7 +20,7 @@ brew tap gabrielkoerich/tap
   - Install: `brew install orchestrator`
   - Start service: `brew services start orchestrator`
   - Stop service: `brew services stop orchestrator`
-- [`passbox`](https://github.com/gabrielkoerich/passbox) (`0.6.4`): Password store that asks for a fingerprint before an agent reads a secret
+- [`passbox`](https://github.com/gabrielkoerich/passbox) (`0.6.5`): Password store that asks for a fingerprint before an agent reads a secret
   - Install: `brew install passbox`
 - [`vault`](https://github.com/gabrielkoerich/vault) (`0.2.1`): Lock down sensitive files with age encryption
   - Install: `brew install vault`
