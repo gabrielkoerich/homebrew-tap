@@ -1,24 +1,24 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  version "0.13.33"
+  version "0.13.34"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.33/passbox-aarch64-apple-darwin.tar.gz"
-      sha256 "1469ba35228495d94ac7299e92e4f67803cac37e809610022b3cc21d47ac4000"
+      url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.34/passbox-aarch64-apple-darwin.tar.gz"
+      sha256 "1b54fd24ada167ba76a8506de3f0a69a006c44dc6e70590efa5df3c867776a09"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.33/passbox-x86_64-apple-darwin.tar.gz"
-      sha256 "06f0c6969814cee490b6cf54379554ed226063959cccc5a732051fbb9912cb5d"
+      url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.34/passbox-x86_64-apple-darwin.tar.gz"
+      sha256 "7ee16701a8e5aac7bb4600b135e62ab6f1888ff501e50145efd66f09f4640c7e"
     end
   end
 
   # Linux builds without the host feature, so it carries no Enclave and no broker server
   on_linux do
-    url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.33/passbox-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "17b212eb5f595bb82c7e8f68c5a1d12e05060d465f8e7cee021316a0ac5d81c3"
+    url "https://github.com/gabrielkoerich/passbox/releases/download/v0.13.34/passbox-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "f4805cdacdef2869cfc1f92dc5ce6da7ccd211017be0cd7ff711291d015917b3"
   end
 
   # Source builds stay available for anyone who would rather compile what they can read
