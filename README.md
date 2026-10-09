@@ -22,6 +22,8 @@ brew tap gabrielkoerich/tap
   - Stop service: `brew services stop orchestrator`
 - [`passbox`](https://github.com/gabrielkoerich/passbox) (`passbox-aarch64-apple-darwin`): Password store that asks for a fingerprint before an agent reads a secret
   - Install: `brew install passbox`
+  - Start service: `brew services start passbox`
+  - Stop service: `brew services stop passbox`
 - [`vault`](https://github.com/gabrielkoerich/vault) (`0.2.1`): Lock down sensitive files with age encryption
   - Install: `brew install vault`
 
