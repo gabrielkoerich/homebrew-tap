@@ -1,25 +1,18 @@
 class Orch < Formula
   desc "Multi-agent task orchestrator for AI coding agents (claude, codex, opencode)"
   homepage "https://github.com/gabrielkoerich/orch"
-  version "0.81.80"
+  version "0.82.0"
   license "MIT"
+  url "https://github.com/gabrielkoerich/orch/releases/download/v0.82.0/orch-arm64"
+  sha256 "74db3dd6cf89ba3f47854aa4f81631614b011dfaea6c581a9209900037d71268"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gabrielkoerich/orch/releases/download/v0.81.80/orch-arm64"
-      sha256 "d534c86d8cf376a50dd29f711dab888b7c48f3baf96b4547e24e6ea027d2889e"
-    else
-      url "https://github.com/gabrielkoerich/orch/releases/download/v0.81.80/orch-x86_64"
-      sha256 "6d42c93e6057c2f0048d60422bd8fc7ad7be8535aa97e3c17f915b2910652cf1"
-    end
-  end
-
+  depends_on arch: :arm64
+  depends_on :macos
   depends_on "gh"
   depends_on "tmux"
 
   def install
-    bin.install "orch-arm64" => "orch" if Hardware::CPU.arm?
-    bin.install "orch-x86_64" => "orch" if Hardware::CPU.intel?
+    bin.install "orch-arm64" => "orch"
 
     # Install additional resources
     (libexec/"prompts").install Dir["prompts/*"] if (buildpath/"prompts").exist?
