@@ -24,6 +24,8 @@ brew tap gabrielkoerich/tap
   - Install: `brew install passbox`
   - Start service: `brew services start passbox`
   - Stop service: `brew services stop passbox`
+- [`shipcheck`](https://shipcheck.run) (`shipcheck-aarch64-apple-darwin`): Run your CI checks locally and post the result as the PR's required checks
+  - Install: `brew install shipcheck`
 - [`vault`](https://github.com/gabrielkoerich/vault) (`0.2.1`): Lock down sensitive files with age encryption
   - Install: `brew install vault`
 
