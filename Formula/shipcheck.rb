@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.6/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "4fb668de966774ae953f3e45c71f78014b6ca2ce56882550dc152a3b90f14121"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.7/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "bc1fbf0aa464b08fe16e65e311e9bf7658a6508cffda29614d677f1d7bd23b19"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.6/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "87e3a02e2ab6f0aebfc34158f8c626c260d9f7cebc1213cae64371769d37e7bc"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.7/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "765fd85b28205d0d45e3fd4fd6da3e7927ec95527c794f9244e187eb152e5346"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.6/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "434b5a491c82b88feed427cd9fc5fa944daaf043a127be7d1212f91d2166e38c"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.7/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c72c8ca95dd0a78c3f0b035c12d021586f8b0a362981cc457af1e9d4183476fb"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.6/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9f0501ef0d65976d4e1d3aa9f45de6be06eb52cdccf7512382f35d79fb749bc9"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.7/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c3a37ed15e4a2c51c8ddb8c2a0e8eac012cae154058eb274b3e506300c7d6a54"
     end
   end
 
