@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.3/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "7899329c334111bcd97e83df8c395dd619b030cc55a9b892471dd01852777655"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.4/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "ffbad31855c34376eb8b6e3340d21f79dab6c9a65494f8459159035f56df50ba"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.3/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "423c3ce8231fe4f8676f06a2dbc5792375e7e618c6fff3955e653f660b45a298"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.4/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "bb113c5f26058284c81a12077ccc3908c7342bf1bad472c4bee0911c2f8231fa"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.3/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f5123b8dfdb909e3c745297e9207f13cce098d2b46dfb1ea57b0ea63e564dee5"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.4/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b29f95f1d36271b8560bd9e5f1e7a85a1b0d347de81ab003239bf47c31c815bf"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.3/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "29cb9015ca07d1568562dccb964272516a278077461c4ec3850d51b64e6ff440"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.4/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0a5331347891bc05769b6961bfd7632b05e05cc07a14bf348cb7b54c50f1310a"
     end
   end
 
@@ -57,6 +57,6 @@ class Shipcheck < Formula
   end
 
   test do
-    assert_match "usage: shipcheck", shell_output("#{bin}/shipcheck --help")
+    assert_match "Usage: shipcheck", shell_output("#{bin}/shipcheck --help")
   end
 end
