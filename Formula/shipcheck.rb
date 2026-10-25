@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.10/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "178639cc384361ed87daaadf30dbdb7dd9f3d4c6b2c1c5cd1a967f671c2d53e5"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.11/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "ba0094b7ac5d315ee7d78b25ce754125d0c8b4e16a657dfe2c47a4ccee51f637"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.10/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "f3012cdf201050b41e09ca59d9f67877c5abc2f477204bf5d7ad2dfbc066cf45"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.11/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "36c54064321b2dd1de625e0c09579a4bc0ecd425cf674787f371ad77cbd4155e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.10/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e852cd68372388df29c5f9e6b6b89699b55b8aefdad8dbf6a92b47d6c560a5e0"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.11/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "aab64d22bf221174387c634ce8d5e5d711131fa1591ba3702d687f46aab2b4a8"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.10/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "adeb874762a828cc0c7d26de657ff105446de3fb76b32241d5562b6a7d0942d9"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.11/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "74edf692e5d51b9b1461a9aa738d5cf5300d32cb1805cd8146a36b084d4309e7"
     end
   end
 
