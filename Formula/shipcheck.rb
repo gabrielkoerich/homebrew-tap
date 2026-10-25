@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.12/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "1472e5cc142d1d5ce87ab9f1c7c3ede9e68ed091587dbac53ec685cc668454bf"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.13/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "0a2a1a13cf900494688de8e342039b7f436de72b79871abed494826bd7b74e67"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.12/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "59f197d719c40cdac5844dd7f5a83086413db10a06c5632db13956d0522c6849"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.13/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "ecfb541a3f25b558d3de9570761d9ad4d8ccdbf0474692dfce06fbf363bb8730"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.12/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8da47f73d071e621c3a2ebdc44a991576795718f82d75c60943105083749eca5"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.13/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3f5f9e7d911171e356985c11b65e4660029f2e39c78a883445d63ab06fd7fe66"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.12/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "adc4b965c94ef6e5fc1f3664908ecedc909028846bf734d62631cc8e36446195"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.13/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "86c79c3dbd56800a768be8c57c98d5412879847bd545543a0ee4bd5e89ba1c59"
     end
   end
 
