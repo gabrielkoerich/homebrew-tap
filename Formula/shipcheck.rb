@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.19"
+  version "0.1.20"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.19/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "a307f903f449ba49c02bd6dd1fdea0c0bdd16476e100a5a69758c6425e010bc3"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "805520f35b07aa0c2e71d8441fc054dd18a973e5d07678be0bdf7f0a0fe8d0a2"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.19/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "876e581067681c4b112ba4d15a02fcc1ae9e44d25083f03dac363fa3d367c055"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "f9bf5e2e93efe96f07b3503dee909d4ee525d47ca05a72d5061746528306ce78"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.19/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e15009431e160fb9ea5fed270e8feffc43a1ee4039cfc5a9edc8ed9a105d9de"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "962d9c54f6302da4c1185550d6c7b46d5a7742fe46399aa8afae3e0ad40a6f14"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.19/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a4d4bc3fdc7653a2a9fccbcba36a24da17f15d33ba69b464838a9aee0fe5d67d"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "77eb4086062a22593ef39326d3635c88f431c310328e3d8a4d550285e59f3c11"
     end
   end
 
