@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.14/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "c6e9488af2b17d08bdfbb078ea347e9d46153d3d16bd9056be11f32c1c7ca9e5"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "f27ff2af57eb8be777d46c0307c58889e6890351ca79e863be181f5d5a319975"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.14/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "a893534c8af2c1d9b86aa5e78795031a1df4ce51d3a2806420b73dcdaa212779"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "68aa35f40afc5816d92c5a635b120dc4f8b85c88908c68c2a99804599c73978c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.14/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7bd6596ced742d36fc7230c249914065d8a355837268a82f989e171c7c0109cf"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c853695a430d08e0e60f44dcc331e44bca1bd8aceddf7fc6f18e5350956da263"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.14/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d39e524b9df7ca6f81dc8654fe457be67ade5d35d27bba282c058bf6adc5fcf1"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2d22b73350ef96879aac7f26aec87d712b5781c2ef69a02c4117dcdeefa100c1"
     end
   end
 
