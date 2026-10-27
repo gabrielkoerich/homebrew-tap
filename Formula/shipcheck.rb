@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.17"
+  version "0.1.18"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "382968654bff5e80c7388a56978b9895404c220bc01ef908f4f3091373dfcd94"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.18/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "5236ada43b3cc2e39566ca00f57395bcb212f8b7edb9a4104c871fa71f4b39b6"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "6f15aa313e8719fb9983558c7273462fbf1c5464b6fbc50b4a2180a898264ad1"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.18/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "0ae74056a3d1e8b7cf8bd5995df914c0bf1ebca8764aa85d6fabfb5d8574cea3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "11f1a101e2dc08f4adec45f06cb58875d8a68aefd2aa570dfdfb4ae8337e1095"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.18/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d6a3fb620b291053d7724f3f0ad5cf96a980131b7039ed6676576175c0c44854"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "24ea5f17a4c943b7023d1f465af827cfb3627f445e8bd7ba1a752e7c79c7cee2"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.18/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "072484c0fa3e62eb00776b70fa172df754b4bf1360deb98b96aab4f54b7f4a90"
     end
   end
 
