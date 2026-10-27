@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.20"
+  version "0.1.21"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "805520f35b07aa0c2e71d8441fc054dd18a973e5d07678be0bdf7f0a0fe8d0a2"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "e39cd970cd27723507634938e4d22d26d969684a398536be24191f83882f1b45"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "f9bf5e2e93efe96f07b3503dee909d4ee525d47ca05a72d5061746528306ce78"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "72f4ead555cb3a730c6c3589693ae3843cd4afafae6b9ebad487b7a57e8533ae"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "962d9c54f6302da4c1185550d6c7b46d5a7742fe46399aa8afae3e0ad40a6f14"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8e22f35fee7a3283f3c7face769eaa25e26649481d59ca0e0f94aec9173a149b"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.20/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "77eb4086062a22593ef39326d3635c88f431c310328e3d8a4d550285e59f3c11"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5a1570fccbb2c5b058ad168eb0ea25af5dff8a77b25db25905da2fe0f41d4e59"
     end
   end
 
