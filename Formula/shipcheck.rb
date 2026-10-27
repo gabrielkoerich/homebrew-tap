@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "e39cd970cd27723507634938e4d22d26d969684a398536be24191f83882f1b45"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "1aa266e4866a31a509a5199b779af9d6693c632f5da9d38c8d7a53d970cbacfd"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "72f4ead555cb3a730c6c3589693ae3843cd4afafae6b9ebad487b7a57e8533ae"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "8f60663577753d39092e8b31df04cb49349c2adcd3d1e38858985df3c0912259"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8e22f35fee7a3283f3c7face769eaa25e26649481d59ca0e0f94aec9173a149b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "621bcec601cdbea4b65349bda517504e70af1b1a7bfaee3ad50ace31dd1cf133"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.21/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5a1570fccbb2c5b058ad168eb0ea25af5dff8a77b25db25905da2fe0f41d4e59"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e1b857a0b5ec6bdb3fc25a01bf6dcb620348425de59f6c0c14e735bd5e226b32"
     end
   end
 
