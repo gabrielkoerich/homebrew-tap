@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "f27ff2af57eb8be777d46c0307c58889e6890351ca79e863be181f5d5a319975"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "107f02eff28a8dfbd6c69f8d2b371f0261b077b88a8046cdd526aa954a88a98c"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "68aa35f40afc5816d92c5a635b120dc4f8b85c88908c68c2a99804599c73978c"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "d403d141bafff987cec87f957c9e66181ea50bbd8768b5380af980524874585d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c853695a430d08e0e60f44dcc331e44bca1bd8aceddf7fc6f18e5350956da263"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "12deccb19740edfb437b0d0a1aa26abccc4637ceb3ce5b65417aa19f656d639b"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.15/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2d22b73350ef96879aac7f26aec87d712b5781c2ef69a02c4117dcdeefa100c1"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "93ee80887d1e8ab3d06dddff1811ad1e955b65b708cd1315d3788daf0780920f"
     end
   end
 
