@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.16"
+  version "0.1.17"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "107f02eff28a8dfbd6c69f8d2b371f0261b077b88a8046cdd526aa954a88a98c"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "382968654bff5e80c7388a56978b9895404c220bc01ef908f4f3091373dfcd94"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "d403d141bafff987cec87f957c9e66181ea50bbd8768b5380af980524874585d"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "6f15aa313e8719fb9983558c7273462fbf1c5464b6fbc50b4a2180a898264ad1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "12deccb19740edfb437b0d0a1aa26abccc4637ceb3ce5b65417aa19f656d639b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "11f1a101e2dc08f4adec45f06cb58875d8a68aefd2aa570dfdfb4ae8337e1095"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.16/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "93ee80887d1e8ab3d06dddff1811ad1e955b65b708cd1315d3788daf0780920f"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.17/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "24ea5f17a4c943b7023d1f465af827cfb3627f445e8bd7ba1a752e7c79c7cee2"
     end
   end
 
