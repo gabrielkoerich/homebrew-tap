@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.24"
+  version "0.1.25"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "20de90326506b00ae0636f7e0e8abe5669f1c7d832a2f1fd85658adcaee32521"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.25/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "442c6c8d043467d87b2e6a742370b861d7539deaa6f95dc1d79962a3805e7189"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "7c80ef8ee2c84f4f783f19ec87bee7b0b6fe3b755673517f27733289a750448e"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.25/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "65a1a5e31b2120b573344703c9047f3a9b00de5054dfdeee47415adcd22aaea7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1b3e40dd37fdc68e2d39f464b44722e9c30b8760ebb020bb74b23d9371861e90"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.25/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ecb1794595373d6f2b46ad70a6f2ea9a4803055a0b87dda957d731bfee5242ec"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c5fcacc3c953470838c1deeb629a9ebc9b7fd3ec8ac734ced0a0b57435cef2ac"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.25/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "58db47e0f137685ce18f312e9c94d8bfaf755bdd9dfc6a8decfda2fd0f0dc42a"
     end
   end
 
