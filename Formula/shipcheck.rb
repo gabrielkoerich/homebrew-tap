@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.23"
+  version "0.1.24"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "d81ef737bc41b64e11cb39014878c263204566ee28bd61f9253c6fe8d15739ef"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "20de90326506b00ae0636f7e0e8abe5669f1c7d832a2f1fd85658adcaee32521"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "acb7212dd2049f62031e47844f08d0fa0273e8225a45010d51730e4951eb70af"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "7c80ef8ee2c84f4f783f19ec87bee7b0b6fe3b755673517f27733289a750448e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e3ec23aae3bd6ca3c8b18a596ade44c2b8f7790f89da5bcf0e7bc063a2f6b572"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1b3e40dd37fdc68e2d39f464b44722e9c30b8760ebb020bb74b23d9371861e90"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6aae794bd483db6a78fd9baadf77e8e38f34e9494a0bfbfc5b024cf2d9925f9f"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.24/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c5fcacc3c953470838c1deeb629a9ebc9b7fd3ec8ac734ced0a0b57435cef2ac"
     end
   end
 
