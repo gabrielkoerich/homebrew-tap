@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.1.22"
+  version "0.1.23"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "1aa266e4866a31a509a5199b779af9d6693c632f5da9d38c8d7a53d970cbacfd"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "d81ef737bc41b64e11cb39014878c263204566ee28bd61f9253c6fe8d15739ef"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "8f60663577753d39092e8b31df04cb49349c2adcd3d1e38858985df3c0912259"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "acb7212dd2049f62031e47844f08d0fa0273e8225a45010d51730e4951eb70af"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "621bcec601cdbea4b65349bda517504e70af1b1a7bfaee3ad50ace31dd1cf133"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e3ec23aae3bd6ca3c8b18a596ade44c2b8f7790f89da5bcf0e7bc063a2f6b572"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.22/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e1b857a0b5ec6bdb3fc25a01bf6dcb620348425de59f6c0c14e735bd5e226b32"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.1.23/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6aae794bd483db6a78fd9baadf77e8e38f34e9494a0bfbfc5b024cf2d9925f9f"
     end
   end
 
