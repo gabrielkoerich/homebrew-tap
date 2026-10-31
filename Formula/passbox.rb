@@ -1,22 +1,22 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  version "2.0.10"
+  version "2.0.11"
   license "MIT"
 
   # Apple silicon only, since the Secure Enclave and Touch ID flow is built and tested there
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.0.10/passbox-aarch64-apple-darwin.tar.gz"
-      sha256 "5644b3b97e18416a1e7bd3eec93d58e488e811fef58e1d62c9b2276595318963"
+      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.0.11/passbox-aarch64-apple-darwin.tar.gz"
+      sha256 "5a93850edae4bb5b314d0e6c3831812c160529005dca858a003a1df985fcd8ed"
     end
   end
 
   # Linux builds without the host feature, so it carries no Enclave and no broker server
   on_linux do
-    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.0.10/passbox-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "8ecb1878b7a4cf5e3d1fb00011f7fdaf92cee3d65af15899a77bce08c3737718"
+    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.0.11/passbox-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "2b2aa4e3be6ef3aaa90463a0ecff2b2b2a98d5f9af71c68ccbb549a6627a0d6c"
   end
 
   # Source builds stay available for anyone who would rather compile what they can read
@@ -45,6 +45,8 @@ class Passbox < Formula
 
       Install rclone only if you choose an rclone remote. iCloud Drive, a plain
       directory and a git remote need no extra tools.
+
+      After an upgrade, refresh the agent skill with `passbox skill install`.
 
       To keep the broker running, start it as a user service, not with sudo:
         brew services start passbox
