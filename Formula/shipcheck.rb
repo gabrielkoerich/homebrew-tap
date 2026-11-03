@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.15"
+  version "0.2.16"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "d4c6b49b931e6a1225dce3cfdfdd514956f9e79edb4b5a8a549812d113bff3fc"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "8e81bafce947aed3e080aabff0b5d80a859700bfa2180b145382658fd3785867"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "3f9ddcf8af2f4857b5b42f521d2959b54890c86ddb72ca43fd5b2aef653b9bb7"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "0b04ef1975dab24d4955c128a8953da8626617696260618fded1f39043675e96"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d2b757d77da2a2f521bf0cafad19c9b3948f47729f72b44360366f77bb1febae"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ad73ff2f031edb761494d6fbd533f5ec5623476742a480daf4fe8e471946702c"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d80a19b7f4a734901468fe8c8e649fd9d1969822352634d780e47772406236c0"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "828ff4ab0062f96e596d294f4af07952375f6b97799bf1feac606bcd9258bbba"
     end
   end
 
