@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.13"
+  version "0.2.14"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.13/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "fe2a59bf345cde564f90093b82d9a94e298dfe43943853e03031a1a27d81d740"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "ed0580c50f18a60c0f89e7a81917f695ebc1ccd444fb98b325d8363a107a3873"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.13/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "5ea0140f84fe72d6eace403fa3cddb02faa1c8ef898dffcbe4b272fe11532824"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "9541e657acff8fea7fba2f8a88ee53bf6515069716e41beda5447696a6144001"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.13/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2c34c1d4b62990b4ed7180677009d4388bb7d3fdce4f1219ad288a83396e57af"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ce147bd51aca5e6feed5d6652492bd14a1453546882499215eb855a5f6c42bb1"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.13/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6bcff65f78c3b01079234ee651ff2c8fd6ecde32d82feef7c10c926e7e62f993"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "38d9a20ac18e06a734b2ce179556c85d4dbbccf27d9465cb57340c7ad4728767"
     end
   end
 
