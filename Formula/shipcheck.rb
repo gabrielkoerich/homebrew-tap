@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.10"
+  version "0.2.11"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.10/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "b85f75a8e9b0eaec1fabf9648604184d2e61f071cded11edf7c4e5e4ee7873a8"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "96a114416cc4f8b7076074a4af178baab444b2dc2c7f15a44448e51db4e9e648"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.10/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "1775ca36755084ad3eff7a4df1bb6fede4fde3043b5d0ce627db7c282f7d3509"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "9d7587c902e19175e29ce34fdd72c93370451820c9e4984d2b41e8f013e9a532"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.10/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5aca107d45a39d1dbc7b25db7fd1249c474ebe08f1754609c22b72292e8747c6"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7d020e6e7e6cd3ef7f6ab50aee5bab821d10ee8d30f0d2d874be0ca0b9d6d070"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.10/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b2e59fb73bad5012aa465a9f5949b4f1f69ef196ead86ab071d070c566097027"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1a40107415295da81abcf4edb4322cbcd30ae762beb80190f3849ef87d577555"
     end
   end
 
