@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.16"
+  version "0.2.17"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "8e81bafce947aed3e080aabff0b5d80a859700bfa2180b145382658fd3785867"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "7c8284649e3af448938ff53b9ae33926a871fbcdd791f9af145edcf7d384bd91"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "0b04ef1975dab24d4955c128a8953da8626617696260618fded1f39043675e96"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "d05df73a634b6b48549141e503b89ca3ffacfbd618f14fb1113ec5cb9a2f0c7b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ad73ff2f031edb761494d6fbd533f5ec5623476742a480daf4fe8e471946702c"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "24c7ba7d424676f0f67f8961e158fdb0bc7c896b751f34f18df65eec3ef2f8ce"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.16/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "828ff4ab0062f96e596d294f4af07952375f6b97799bf1feac606bcd9258bbba"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "605fd945e602b9570d3bb140866030621d0070ffd3b11499d6b33c7f3a221df8"
     end
   end
 
