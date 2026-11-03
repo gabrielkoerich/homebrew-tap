@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.14"
+  version "0.2.15"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "ed0580c50f18a60c0f89e7a81917f695ebc1ccd444fb98b325d8363a107a3873"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "d4c6b49b931e6a1225dce3cfdfdd514956f9e79edb4b5a8a549812d113bff3fc"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "9541e657acff8fea7fba2f8a88ee53bf6515069716e41beda5447696a6144001"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "3f9ddcf8af2f4857b5b42f521d2959b54890c86ddb72ca43fd5b2aef653b9bb7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ce147bd51aca5e6feed5d6652492bd14a1453546882499215eb855a5f6c42bb1"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d2b757d77da2a2f521bf0cafad19c9b3948f47729f72b44360366f77bb1febae"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.14/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "38d9a20ac18e06a734b2ce179556c85d4dbbccf27d9465cb57340c7ad4728767"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.15/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d80a19b7f4a734901468fe8c8e649fd9d1969822352634d780e47772406236c0"
     end
   end
 
