@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.11"
+  version "0.2.12"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "96a114416cc4f8b7076074a4af178baab444b2dc2c7f15a44448e51db4e9e648"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.12/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "0104e7979c8e19202b072bfee7033e40920c9ffef204bf493f489606b9d7726a"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "9d7587c902e19175e29ce34fdd72c93370451820c9e4984d2b41e8f013e9a532"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.12/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "e964b4462f200674eeee1820619fd89f0923fe96afab77169754267be4f353e7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d020e6e7e6cd3ef7f6ab50aee5bab821d10ee8d30f0d2d874be0ca0b9d6d070"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.12/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d8ab3f754a338bb0258e67611d675bca0b41c7daf6d8d5bda048907b2b15337e"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.11/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1a40107415295da81abcf4edb4322cbcd30ae762beb80190f3849ef87d577555"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.12/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7d11a4ce4af06f7ca5990cdf019a32453f36b0596830d1d09b2a73615fd83efb"
     end
   end
 
