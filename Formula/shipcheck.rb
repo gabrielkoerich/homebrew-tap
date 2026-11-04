@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.17"
+  version "0.2.18"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "7c8284649e3af448938ff53b9ae33926a871fbcdd791f9af145edcf7d384bd91"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "01cf938e3a3dbcf7c4268253fbbe9846d74201219b2d0356128c3fc8d4c6afaf"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "d05df73a634b6b48549141e503b89ca3ffacfbd618f14fb1113ec5cb9a2f0c7b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "8d11fb7167ed0386cd0264a3fe47d8947de29d04639ceb97c303d6320b33423b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "24c7ba7d424676f0f67f8961e158fdb0bc7c896b751f34f18df65eec3ef2f8ce"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3238510644f5b7f48eff95da8b911f1841199b955c66a22b3bf78f66f935766c"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.17/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "605fd945e602b9570d3bb140866030621d0070ffd3b11499d6b33c7f3a221df8"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3d626e7e0952aa26cba80e5ba2b542d8abb7f8f9bdf2080373c8be5a54a39ba2"
     end
   end
 
