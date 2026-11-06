@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.18"
+  version "0.2.19"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "01cf938e3a3dbcf7c4268253fbbe9846d74201219b2d0356128c3fc8d4c6afaf"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "f0b48db5c81abf8340399445d99c5af07e01cc7f460f22f4c839c72901db8edc"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "8d11fb7167ed0386cd0264a3fe47d8947de29d04639ceb97c303d6320b33423b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "78436eb3cf490baacbe14833c783eaecf168af705a6d1c3fa0b889e5fb527dee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3238510644f5b7f48eff95da8b911f1841199b955c66a22b3bf78f66f935766c"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2109c50eccfa1371be2399d0173ca3119c3305a5ef9ffabc76434a97c9ab123b"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.18/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3d626e7e0952aa26cba80e5ba2b542d8abb7f8f9bdf2080373c8be5a54a39ba2"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2f3eac245c8f5db8b72e7287373f98a0acc9ed5ba87f510726aa482d744bdc7f"
     end
   end
 
