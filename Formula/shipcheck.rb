@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.19"
+  version "0.2.20"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "f0b48db5c81abf8340399445d99c5af07e01cc7f460f22f4c839c72901db8edc"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "da7511951f9688d651946c9c4980d04d8743fe9cdaa337d79f58c938cab331c8"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "78436eb3cf490baacbe14833c783eaecf168af705a6d1c3fa0b889e5fb527dee"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "aafce5595979c895c23fbfcb0444d37ebc192c4a709d713fd99fe4a9d227dae0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2109c50eccfa1371be2399d0173ca3119c3305a5ef9ffabc76434a97c9ab123b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5cfe897e7c9dcce7f8be18a6802b9da612e9266c27ac0b3f353793105910bab3"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.19/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2f3eac245c8f5db8b72e7287373f98a0acc9ed5ba87f510726aa482d744bdc7f"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "99380a2bf026899a2b8d243b4330ab036638f2fbad081ebf729cd7884b2e28e0"
     end
   end
 
