@@ -4,7 +4,7 @@ class Orch < Formula
   version "0.102.2"
   license "MIT"
   url "https://github.com/gabrielkoerich/orch/releases/download/v0.102.2/orch-arm64"
-  sha256 "c601e24b10d969ba73ea4c31aceb4db60c0308f57d515477723d2ea222f5f01c"
+  sha256 "98bfa5b6315d079a2773ace9be366063b965c4adfe0ec01470bf73e33fb814de"
 
   depends_on arch: :arm64
   depends_on :macos
