@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.20"
+  version "0.2.21"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "da7511951f9688d651946c9c4980d04d8743fe9cdaa337d79f58c938cab331c8"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "02c8f907293344886b945f54f1f23eee6e24b00327d9567c52daa1b032e88e73"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "aafce5595979c895c23fbfcb0444d37ebc192c4a709d713fd99fe4a9d227dae0"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "8643248626423a542a643f584ff6f2ab1085492878f7fb2e9c8746e2c7243faf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5cfe897e7c9dcce7f8be18a6802b9da612e9266c27ac0b3f353793105910bab3"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f43ec225ceb079e4cc6e6783020db6b939271d2007a8fe7f4078c8749c0635f2"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.20/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "99380a2bf026899a2b8d243b4330ab036638f2fbad081ebf729cd7884b2e28e0"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8fa34e86e6dc60b822ceccf8dd431f3dc331de68c6794778d00889f97082d53d"
     end
   end
 
