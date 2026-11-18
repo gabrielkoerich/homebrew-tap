@@ -1,22 +1,22 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  version "2.2.2"
+  version "2.2.3"
   license "MIT"
 
   # Apple silicon only, since the Secure Enclave and Touch ID flow is built and tested there
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.2/passbox-aarch64-apple-darwin.tar.gz"
-      sha256 "6c5b22340f00b6f33585549ac168fb4201301558d9fa3e361bf9bfd9f5df7929"
+      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.3/passbox-aarch64-apple-darwin.tar.gz"
+      sha256 "1a281b85b4f45ea4551294cb477bbc48ade97ccf3d0c24d859844b38e3e3501b"
     end
   end
 
   # Linux builds without the host feature, so it carries no Enclave and no broker server
   on_linux do
-    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.2/passbox-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "bf4f225ef836ad3b6dca6ed4670a5ec7081b6f8e813c0a3813a93c82fed2ce73"
+    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.3/passbox-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "a34715b89710f03f4c53fc6cdd2140bcecb78a6a80348c2c94ed9a32cdfc6c4c"
   end
 
   # Source builds stay available for anyone who would rather compile what they can read
