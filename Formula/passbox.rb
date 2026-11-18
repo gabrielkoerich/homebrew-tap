@@ -1,22 +1,22 @@
 class Passbox < Formula
   desc "Password store that asks for a fingerprint before an agent reads a secret"
   homepage "https://github.com/gabrielkoerich/passbox"
-  version "2.2.1"
+  version "2.2.2"
   license "MIT"
 
   # Apple silicon only, since the Secure Enclave and Touch ID flow is built and tested there
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.1/passbox-aarch64-apple-darwin.tar.gz"
-      sha256 "f343b743ba47726bd7dd681c15120bcf495a74e49853ae7d7a70bfcd00f60104"
+      url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.2/passbox-aarch64-apple-darwin.tar.gz"
+      sha256 "6c5b22340f00b6f33585549ac168fb4201301558d9fa3e361bf9bfd9f5df7929"
     end
   end
 
   # Linux builds without the host feature, so it carries no Enclave and no broker server
   on_linux do
-    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.1/passbox-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "54c1e20fdad78c64508b66cb12e7635e6dbe586bc66dacae33b030ef82b06bd1"
+    url "https://github.com/gabrielkoerich/passbox/releases/download/v2.2.2/passbox-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "bf4f225ef836ad3b6dca6ed4670a5ec7081b6f8e813c0a3813a93c82fed2ce73"
   end
 
   # Source builds stay available for anyone who would rather compile what they can read
@@ -47,10 +47,6 @@ class Passbox < Formula
       directory and a git remote need no extra tools.
 
       After an upgrade, refresh the agent skill with `passbox skill install`.
-
-      To keep the broker running, start it as a user service, not with sudo:
-        brew services start passbox
-      A sudo service runs with no login session and cannot raise Touch ID.
     EOS
   end
 
