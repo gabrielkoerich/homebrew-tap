@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.21"
+  version "0.2.22"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "02c8f907293344886b945f54f1f23eee6e24b00327d9567c52daa1b032e88e73"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.22/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "ac6f8bac19da28ca8eec0294987f2b935e55d7e9f1f56bf2ac5846f4596b0ff6"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "8643248626423a542a643f584ff6f2ab1085492878f7fb2e9c8746e2c7243faf"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.22/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "23499d3d33031033ddc596ee57eb483bcc3cba7fb39033580b62b1709f6641b7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f43ec225ceb079e4cc6e6783020db6b939271d2007a8fe7f4078c8749c0635f2"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.22/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e8896398721ca2bacf20641363b94a7f6bc03cb2e4a43f8a524f3dd41d9ed4fd"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.21/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8fa34e86e6dc60b822ceccf8dd431f3dc331de68c6794778d00889f97082d53d"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.22/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e986f8290b54647e98dddd69e7c4b50dae238a689bbd85254740d00a2541e1a2"
     end
   end
 
