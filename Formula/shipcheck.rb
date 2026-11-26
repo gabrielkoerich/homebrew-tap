@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.23"
+  version "0.2.24"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.23/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "091418742e7af3a13273bdfb27f2bb37d8704bc59c216ea29960423876518502"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "52183e73fb34996be12ef6c75e1fae5e1260d6bdc4da1836f4f3484439aa3eda"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.23/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "d159996594e22f5247fb6b15076c42d469d78e62131efa1326682916d1d0dbb8"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "c4e1660806b56004601af05d4dcee170f21dc7b23be8054cd9adb2ff3c405940"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.23/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5631240def35700ae5504d4cd3e64a4d9605b2288a34ae653ecec2b6a226134b"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "12b0bc08cb79db6082fc2a50f1d81add7538963a52aebde36c988da54563413e"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.23/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3e645054df200e0d915996bd859d5d82e1a6abe2f49e9c74d77b2f443faba682"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5f1ed4f1e2ceeca7edc91f56324ad681f06eee9a70c235efbf4b3ac6b4c75899"
     end
   end
 
