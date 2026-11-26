@@ -1,7 +1,7 @@
 class Shipcheck < Formula
   desc "Run your CI checks locally and post the result as the PR's required checks"
   homepage "https://shipcheck.run"
-  version "0.2.24"
+  version "0.2.25"
   license "MIT"
 
   depends_on "act"
@@ -11,23 +11,23 @@ class Shipcheck < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-aarch64-apple-darwin.tar.gz"
-      sha256 "52183e73fb34996be12ef6c75e1fae5e1260d6bdc4da1836f4f3484439aa3eda"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.25/shipcheck-aarch64-apple-darwin.tar.gz"
+      sha256 "3132016fa532c5c394c7fee32f010ea8432fa43cea3da001574cc632e0ee4c26"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-x86_64-apple-darwin.tar.gz"
-      sha256 "c4e1660806b56004601af05d4dcee170f21dc7b23be8054cd9adb2ff3c405940"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.25/shipcheck-x86_64-apple-darwin.tar.gz"
+      sha256 "694b3a77eda96e77650330de884e90d7f12c6dbf7c5efb4c0a8c9d859b4fb680"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "12b0bc08cb79db6082fc2a50f1d81add7538963a52aebde36c988da54563413e"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.25/shipcheck-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "414216d8f520f0d01e1ea5472851c7d9d593cd4c9d3ea90e2d0ffb27e511c0c1"
     end
     on_intel do
-      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.24/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5f1ed4f1e2ceeca7edc91f56324ad681f06eee9a70c235efbf4b3ac6b4c75899"
+      url "https://github.com/gabrielkoerich/shipcheck/releases/download/v0.2.25/shipcheck-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "04b0e4224c103fa0f7350fa59a93124bb58eb02dd4bb13c901c9383d7718845e"
     end
   end
 
